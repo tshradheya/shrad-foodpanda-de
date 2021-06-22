@@ -46,7 +46,7 @@ Since Python was required for writing script instead of traditional SQL queries,
 - Hence I used pandas to mimic the same
 
 
-### Task3
+### Task3:
 
 - This is similar to Task1 and same logic was used
 - However, since this was more generic,
@@ -55,7 +55,7 @@ Since Python was required for writing script instead of traditional SQL queries,
 
 
 The data was written from pandas dataframe to table using bigquery package. It automatically creates the table and is configured to rewrite data everytime its run.
-
+The other option was using `pandas-gbq` library which is a more out of the box solution but since the existing package did the work I avoided more dependencies
 
 ## Running Code
 

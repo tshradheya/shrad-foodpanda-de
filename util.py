@@ -9,11 +9,7 @@ def get_dataset_from_bq():
 
 def write_to_bq(output, table_name):
     bqclient = bigquery.Client.from_service_account_json('./config/shrad-foodpanda-test-9a162656d6ba.json')
-
-    dataset_id = "tasks"
-    dataset_id_full = "{}.{}".format(bqclient.project, dataset_id)
-
-    dataset = bqclient.get_dataset(dataset_id_full)
+    dataset = bqclient.get_dataset('shrad-foodpanda-test.tasks')
 
     job_config = bigquery.LoadJobConfig(
         write_disposition="WRITE_TRUNCATE"
