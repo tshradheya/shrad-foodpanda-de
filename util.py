@@ -1,26 +1,27 @@
 from google.cloud import bigquery
-from google.oauth2 import service_account
-import pandas_gbq
 
-project_id = 'shrad-foodpanda-test'
-bq_dataset = 'shrad-foodpanda-test.tasks'
-
-def get_dataset():
+def get_dataset_from_bq():
     bqclient = bigquery.Client.from_service_account_json('./config/shrad-foodpanda-test-9a162656d6ba.json')
 
-    # Download query results.
-    query_string = """
-        SELECT * FROM `bigquery-public-data.geo_international_ports.world_port_index`
-        """
-    df = (
-        bqclient.query(query_string)
-            .result()
-            .to_dataframe()
-    )
+    df = bqclient.list_rows('bigquery-public-data.geo_international_ports.world_port_index').to_dataframe()
 
     return df
 
-def write_to_bq(output, table_name, ):
-    credentials = service_account.Credentials.from_service_account_file('./config/shrad-foodpanda-test-9a162656d6ba.json')
-    pandas_gbq.to_gbq(output, bq_dataset + '.' + table_name, if_exists='replace', project_id=project_id, credentials=credentials)
+def write_to_bq(output, table_name):
+    bqclient = bigquery.Client.from_service_account_json('./config/shrad-foodpanda-test-9a162656d6ba.json')
+
+    dataset_id = "tasks"
+    dataset_id_full = "{}.{}".format(bqclient.project, dataset_id)
+
+    dataset = bqclient.get_dataset(dataset_id_full)
+
+    job_config = bigquery.LoadJobConfig(
+        write_disposition="WRITE_TRUNCATE"
+    )
+
+    job = bqclient.load_table_from_dataframe(
+        output, dataset.table(table_name), job_config=job_config
+    )
+
+    job.result()
 

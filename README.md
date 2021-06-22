@@ -1,6 +1,6 @@
 # FoodPanda Data Engineering - Shradheya 
 
-This repository is for the solution to take home exam for Foodpanada Data Engineering Position
+This repository is for the solution to take home exam for Foodpanda Data Engineering Position
 
 ## Setup
 
@@ -18,6 +18,9 @@ This repository is for the solution to take home exam for Foodpanada Data Engine
 - Create [Google Service Account](https://cloud.google.com/docs/authentication/production
 ) for project use and save the keyfile under `config/`
 - Add `bigquery-public-data.geo_international_ports` dataset
+- Create role using IAM and invite foodpanda data team with least required permissions
+- Create dataset `tasks` to insert tables (can also be done programmatically as one time task)
+
 
 ### Installation Process
 
@@ -49,6 +52,9 @@ Since Python was required for writing script instead of traditional SQL queries,
 - However, since this was more generic,
  I abstracted the logic for it to be more modifiable and used for other use cases
 - Based on analysing schema I found the Geometry data type of big query available and I also explored that but the above seemed a better programmatic solution
+
+
+The data was written from pandas dataframe to table using bigquery package. It automatically creates the table and is configured to rewrite data everytime its run.
 
 
 ## Running Code

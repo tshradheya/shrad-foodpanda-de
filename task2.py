@@ -5,7 +5,7 @@ Function which gets ports having cargo_wharf and saves into table the number of 
 """
 def task2():
 
-    df = util.get_dataset()
+    df = util.get_dataset_from_bq()
 
     ports_by_ctry = df.where(df["cargo_wharf"]).groupby('country')['index_number']\
         .count().reset_index(name='port_count')\

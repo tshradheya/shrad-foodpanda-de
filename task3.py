@@ -6,7 +6,7 @@ Function which gets closest port based on location and having required resources
 """
 def task3(resources, lat_disaster, long_disaster):
 
-    df = util.get_dataset()
+    df = util.get_dataset_from_bq()
     for resource in resources:
         df = df[df[resource] == True]
 

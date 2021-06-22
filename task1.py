@@ -7,7 +7,7 @@ And then adds a column which contains distance to this port and saves top 5 clos
 """
 def task1():
 
-    df = util.get_dataset()
+    df = util.get_dataset_from_bq()
     sg_jurong_port = df.loc[(df["country"] == 'SG') & (df['port_name'] == 'JURONG ISLAND')][['port_latitude', 'port_longitude']]
     if sg_jurong_port.shape[0] != 1:
         return
