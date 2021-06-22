@@ -43,7 +43,7 @@ Since Python was required for writing script instead of traditional SQL queries,
 ### Task2:
 
 - This is equivalent of performing a group by `country` and a count(*) aggregate
-- Hence I used pandas to mimic the same
+- Hence I used pandas to mimic the same. And then I used `max()` to get all countries with the max number of ports
 
 
 ### Task3:
