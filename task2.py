@@ -8,12 +8,14 @@ def task2():
     df = util.get_dataset_from_bq()
 
     ports_by_ctry = df.where(df["cargo_wharf"]).groupby('country')['index_number']\
-        .count().reset_index(name='port_count')\
-        .sort_values(by='port_count', ascending=False)
-    print(ports_by_ctry)
+        .count().reset_index(name='port_count')
+
+    highest_num_of_ports = ports_by_ctry['port_count'].max()
+    ctry_with_highest_ports = ports_by_ctry[ports_by_ctry['port_count'] == highest_num_of_ports]
+    print(ctry_with_highest_ports)
 
     print("Starting writing to table...")
-    util.write_to_bq(ports_by_ctry, 'cargo_wharf_port_by_ctry')
+    util.write_to_bq(ctry_with_highest_ports, 'cargo_wharf_port_by_ctry')
     print("Finished writing to table")
 
 

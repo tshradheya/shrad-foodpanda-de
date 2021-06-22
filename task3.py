@@ -21,7 +21,7 @@ def task3(resources, lat_disaster, long_disaster):
     suitable_ports['distance_from_distress'] = distances_arr
 
     # Get closest port
-    closest_port = suitable_ports.sort_values(by='distance_from_distress').head(1)
+    closest_port = suitable_ports.nsmallest(1, 'distance_from_distress')
     closest_port = closest_port[['country', 'port_name', 'port_latitude', 'port_longitude']]
 
     print(closest_port)

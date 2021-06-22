@@ -23,7 +23,7 @@ def task1():
     df['distance_in_meters'] = distances_arr
 
     # Get Top 5 excluding that port itself
-    distance_from_jurong_island_port = df.where(df['distance_in_meters'] > 0.0).sort_values(by='distance_in_meters').head(5)
+    distance_from_jurong_island_port = df.where(df['distance_in_meters'] > 0.0).nsmallest(5, 'distance_in_meters')
     distance_from_jurong_island_port = distance_from_jurong_island_port[['port_name', 'distance_in_meters']]
 
     print(distance_from_jurong_island_port)
