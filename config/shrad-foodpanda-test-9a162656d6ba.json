@@ -1,10 +1,10 @@
 {
   "type": "service_account",
   "project_id": "shrad-foodpanda-test",
-  "private_key_id": "9a162656d6babd7ca17ff585537d012214589c2e",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDEF8ghX9dDxKYX\nyZAa2HS79XqHExlaWdhPcosHdOrpMnustTuU4YBe1mc6slcZOHVHrLlIjO+kxKbS\nz7/nPYL2K06S6wK9YYAndXiiQ2gfRIlhqqc8fKKq4eDNXT38yKLhuyOR8t25jesb\nTID4NS1BTFRRcAN0Vu3AxVrdYBGAUGxkBgOJxNuTP744sREmEguUQD+Ry27hF6Qr\nOjnMLfEhBE8cF/JnmmnT5lMDQxZoJxRKBlzJb/lH6Lo92Fd7+H46y3OgE//1wnyi\nEjXu4aVXX3/yKpwxnfYWAn9FKh316SKB980KcemAhuJUUaet3XrVUtvz6/yoXdoQ\nRkNDi5rDAgMBAAECggEAIyAtcckEuvdxVyZ8gUqP0pF88tA5hOU+KbEXdWz8nWw1\nGjFWrGsefx6B3FJQ5swlugKXKAdS8B1n0rBzLD1pBaapSwj88yaRecABrXNMpfk1\ncMDMdznOO7T9e1v9/BeGkc/fZcfu7suct0WjfpKr+hvtqK7bd44Qxay0g54vVGAD\nA9qlVv6ja7cWp3lilCjTDGKgWhn+vI4LbDwTYaRDZpz/RfZ4KjpA6FgL5UMKo2I/\nBcbJZTQ9ic29n/oD3P0z/MeddduF1Fc0EwtvIGVmcVMhaCORqTmdG+EK/cG35S6H\nmciYd3Vn/Oei5OPr7LFwv6ETaDVata6DfwD0fEgQaQKBgQD1+8fpkere6ZrHQA1e\nqpf5akJLwSFGfSb1BKErDBUtamDEs9PDnaINZOUka01m6ryWZFExBDzgRqQ6q0xc\n/Lb2b4w3YA1g/Ub7dqYi4zj5cDIJ6zQylvO+eVLD02VEUqwBKBFXh6MsJHTx2Zca\nYxOTE1un62A38Rhj3nTwZ/aLOQKBgQDME+xjLmEzjaqKCM7qviGV7TOzZ2r58OSH\nBTNvjnu49FqkrKLSNxIql5wXe47NtzTRC7tcPzHAU7Oo3qCcdJzj5R5S4tXQPvM8\neRj3GptXF3/rCUOA7lIGCN3E3olK7P2iRANNyfGhsOgKyeQhZqC/E2KGNLAfPBzu\nFmsozymJ2wKBgBPJpVNMwbAc6q6MoIa1AnS1749YgezBtJiRPsXPuwRkQlSQgsCB\ntb+OFkDPwPI+f905RK7EwIDqLdvqW8I/Mhiw8H6j42+h8EvaR5MW5EZsmBnkKdbH\n/eOcruPB5auRWvTc3EhGSQIMDLxH3LfqsHBsZjsj3CGj62pdQtr0AglBAoGBAI32\nCglQWRN4p7pPuEh5LHnTwJQ7C6KEXSRDjO08S3p0mJ1W7giXgI6aWl3HeKZHnHkS\n1SmtWBl24FJHU6iiQgUR+88itiOftqpJfwFdw9OIqFZCYm/M2MgT4NkzCIRTaXg4\nIag6I1kb676dhJFrh8SDYpUDD8UalvFULQT9XuLjAoGAJ4cXZ7qM99mS/oCxSWbI\n93vb3a5HoMqtHplJQwF2LSbABXrrmU8cTMICn5nMJXqQ/kE5HKwDdTBBAhyaKELR\nZ5nxsJQv/K8KmnFlqkUhRoLX4aTnNOgEV1f7BOeBHBJ66cJtt9PnoLTvt9Hem/WH\nUxq2xDaTkFLelzTkUAlxos8=\n-----END PRIVATE KEY-----\n",
+  "private_key_id": "xxx",
+  "private_key": "xxx",
   "client_email": "query-user@shrad-foodpanda-test.iam.gserviceaccount.com",
-  "client_id": "108884700213326622090",
+  "client_id": "xxx",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
