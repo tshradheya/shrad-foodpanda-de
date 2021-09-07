@@ -7,8 +7,8 @@ This repository is for the solution to take home exam for Foodpanda Data Enginee
 ### Environment and Versions
 
 - Python: 3.7 [Install](https://docs.brew.sh/Homebrew-and-Python)
-- Google Project ID: `shrad-foodpanda-test`
-- Google Project Number: `412359830924`
+- Google Project ID: `xxx`
+- Google Project Number: `xxx`
 - Google Service Account: ` query-user@shrad-foodpanda-test.iam.gserviceaccount.com`. Key present in `config/`
 
 
